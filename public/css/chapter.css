@@ -247,7 +247,7 @@ li {
   float: left;
 }
 .card :before {
-  background: url("./1221-test-tubes.svg");
+  background: url("../chem.svg");
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #eee;
