@@ -20,14 +20,15 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-    <link rel="stylesheet" href="../public/css/chapter.css" />
+    <link rel="stylesheet" href="/css/chapter.css" />
   </head>
 
   <body>
     <div>
       <div class="demo">
         <nav class="navbar navbar-expand-custom navbar-mainbg">
-          <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+          <img src="/assets/o2.png" style="width: 30px; height: 30px; margin-left: 10px;">
+          <a class="navbar-brand navbar-logo" href="#">ChemStudy</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,22 +45,22 @@
                 <div class="right"></div>
               </div>
               <li class="nav-item">
-                <a class="nav-link" href="Home.html"
+                <a class="nav-link" href="/dash"
                   ><i class="fas fa-tachometer-alt"></i>Dashboard</a
                 >
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="chapter.html"
+                <a class="nav-link" href="/chapter"
                   ><i class="far fa-address-book"></i>Chapters</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="quiz.html"
+                <a class="nav-link" href="/quiz"
                   ><i class="far fa-address-book"></i>Quiz</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0);"
+                <a class="nav-link" href="/contact"
                   ><i class="far fa-calendar-alt"></i>Contact Us</a
                 >
               </li>
@@ -75,9 +76,9 @@
               <p class="card-question">Aldehydes</p>
               <div class="card-separator"></div>
               <p style="text-align: justify">Aldehyde Information</p>
-              <a href="./molecules.html">View Aldehyde Molecules</a>
+              <a href="/molecules">View Aldehyde Molecules</a>
               <a
-                href="./molecules.html"
+                href="/reactions"
                 >View Aldehyde Reactions</a
               >
               <div class="card-separator"></div>
@@ -90,11 +91,11 @@
               <div class="card-separator"></div>
               <p style="text-align: justify">Ketone Information</p>
               <a
-                href="./molecules.html"
+                href="/molecules"
                 >View Ketone Molecules</a
               >
               <a
-                href="./molecules.html"
+                href="/molecules"
                 >View Ketone Reactions</a
               >
               <div class="card-separator"></div>
@@ -158,7 +159,7 @@
 
       // Account for home page with empty path
       if (path == "") {
-        path = "index.html";
+        path = "index.ejs";
       }
 
       var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');

@@ -52,7 +52,7 @@ function next() {
     
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
-    setTimeout(function(){ location.href = "end.html";}, 2000);
+    setTimeout(function(){ location.href = "/end";}, 2000);
 
   }
   console.log(question_count);
