@@ -10,11 +10,11 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <title>Document</title>
 </head>
-  <body style='margin : 0px; overflow: hidden;'>
-    <a-scene>
+  <body style='margin : 0px;'>
+    <a-scene style="height: 100vh; width: 100vw; ">
       <a-assets>
-        <a-asset-item id="tree-obj" src="./meth.obj"></a-asset-item>
-        <a-asset-item id="tree-mtl" src="./meth.mtl"></a-asset-item>
+        <a-asset-item id="tree-obj" src="meth.obj"></a-asset-item>
+        <a-asset-item id="tree-mtl" src="meth.mtl"></a-asset-item>
       </a-assets>
     
       <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
