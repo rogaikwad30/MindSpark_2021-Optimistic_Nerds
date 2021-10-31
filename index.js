@@ -43,7 +43,10 @@ app.get("/quiz",urlBodyEncoder,(req,res)=>{
 app.get("/end",urlBodyEncoder,(req,res)=>{
     res.render("end.ejs")
 })
-
-var server = app.listen(8000)
+app.get("/ar",urlBodyEncoder,(req,res)=>{
+    res.render("ar.ejs")
+})
+const PORT = process.env.PORT || 8000
+var server = app.listen(PORT)
 console.log("Server running")
 module.exports = app;
